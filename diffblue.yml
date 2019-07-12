@@ -1,4 +1,4 @@
-buildCmd: cd "./app"; ant build
+buildCmd: cd "arduino-core"; ant build
 testCmd: true
 skipVerification: true
 cbmcArguments:
@@ -173,3 +173,260 @@ phases:
       cover-function-only: false
       # instrument the file as opposed to the function only
       cover-only: file
+units:
+ - target:
+   - dir: bin
+     file: processing/app/BaseNoGui.class
+     sourceDir: src
+     sourceFile: processing/app/BaseNoGui.java
+   - dir: bin
+     file: cc/arduino/packages/discoverers/serial/SerialDiscovery.class
+     sourceDir: src
+     sourceFile: cc/arduino/packages/discoverers/serial/SerialDiscovery.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/TestPackageIndexFilenameFilter.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/TestPackageIndexFilenameFilter.java
+   - dir: bin
+     file: cc/arduino/i18n/Language.class
+     sourceDir: src
+     sourceFile: cc/arduino/i18n/Language.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/ContributionsIndex.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/ContributionsIndex.java
+   - dir: bin
+     file: processing/app/I18n.class
+     sourceDir: src
+     sourceFile: processing/app/I18n.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/ContributedPlatform.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/ContributedPlatform.java
+   - dir: bin
+     file: processing/app/packages/LibraryList.class
+     sourceDir: src
+     sourceFile: processing/app/packages/LibraryList.java
+   - dir: bin
+     file: cc/arduino/contributions/libraries/EmptyLibrariesIndex.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/libraries/EmptyLibrariesIndex.java
+   - dir: bin
+     file: processing/app/packages/UserLibrary.class
+     sourceDir: src
+     sourceFile: processing/app/packages/UserLibrary.java
+   - dir: bin
+     file: processing/app/packages/LegacyUserLibrary.class
+     sourceDir: src
+     sourceFile: processing/app/packages/LegacyUserLibrary.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/PackageIndexFilenameFilter.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/PackageIndexFilenameFilter.java
+   - dir: bin
+     file: cc/arduino/contributions/libraries/LibrariesIndexer.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/libraries/LibrariesIndexer.java
+   - dir: bin
+     file: processing/app/legacy/PApplet.class
+     sourceDir: src
+     sourceFile: processing/app/legacy/PApplet.java
+   - dir: bin
+     file: processing/app/packages/UserLibraryFolder.class
+     sourceDir: src
+     sourceFile: processing/app/packages/UserLibraryFolder.java
+   - dir: bin
+     file: cc/arduino/contributions/DownloadableContribution.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/DownloadableContribution.java
+   - dir: bin
+     file: cc/arduino/packages/BoardPort.class
+     sourceDir: src
+     sourceFile: cc/arduino/packages/BoardPort.java
+   - dir: bin
+     file: processing/app/packages/UserLibraryPriorityComparator.class
+     sourceDir: src
+     sourceFile: processing/app/packages/UserLibraryPriorityComparator.java
+   - dir: bin
+     file: cc/arduino/packages/DiscoveryManager.class
+     sourceDir: src
+     sourceFile: cc/arduino/packages/DiscoveryManager.java
+   - dir: bin
+     file: cc/arduino/contributions/GPGDetachedSignatureVerifier.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/GPGDetachedSignatureVerifier.java
+   - dir: bin
+     file: processing/app/debug/TargetPlatformException.class
+     sourceDir: src
+     sourceFile: processing/app/debug/TargetPlatformException.java
+   - dir: bin
+     file: processing/app/helpers/PreferencesMap.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/PreferencesMap.java
+   - dir: bin
+     file: cc/arduino/packages/Discovery.class
+     sourceDir: src
+     sourceFile: cc/arduino/packages/Discovery.java
+   - dir: bin
+     file: processing/app/debug/LegacyTargetPlatform.class
+     sourceDir: src
+     sourceFile: processing/app/debug/LegacyTargetPlatform.java
+   - dir: bin
+     file: cc/arduino/contributions/VersionHelper.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/VersionHelper.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/ContributedPackage.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/ContributedPackage.java
+   - dir: bin
+     file: processing/app/helpers/OSUtils.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/OSUtils.java
+   - dir: bin
+     file: processing/app/helpers/FileUtils.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/FileUtils.java
+   - dir: bin
+     file: cc/arduino/contributions/SignatureVerifier.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/SignatureVerifier.java
+   - dir: bin
+     file: processing/app/debug/LegacyTargetBoard.class
+     sourceDir: src
+     sourceFile: processing/app/debug/LegacyTargetBoard.java
+   - dir: bin
+     file: cc/arduino/packages/discoverers/PluggableDiscovery.class
+     sourceDir: src
+     sourceFile: cc/arduino/packages/discoverers/PluggableDiscovery.java
+   - dir: bin
+     file: processing/app/helpers/BasicUserNotifier.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/BasicUserNotifier.java
+   - dir: bin
+     file: processing/app/helpers/CommandlineParser.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/CommandlineParser.java
+   - dir: bin
+     file: cc/arduino/packages/discoverers/NetworkDiscovery.class
+     sourceDir: src
+     sourceFile: cc/arduino/packages/discoverers/NetworkDiscovery.java
+   - dir: bin
+     file: cc/arduino/contributions/SignatureVerificationFailedException.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/SignatureVerificationFailedException.java
+   - dir: bin
+     file: cc/arduino/i18n/Languages.class
+     sourceDir: src
+     sourceFile: cc/arduino/i18n/Languages.java
+   - dir: bin
+     file: cc/arduino/contributions/VersionComparator.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/VersionComparator.java
+   - dir: bin
+     file: processing/app/helpers/StringReplacer.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/StringReplacer.java
+   - dir: bin
+     file: processing/app/helpers/UserNotifier.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/UserNotifier.java
+   - dir: bin
+     file: processing/app/PreferencesData.class
+     sourceDir: src
+     sourceFile: processing/app/PreferencesData.java
+   - dir: bin
+     file: processing/app/helpers/filefilters/OnlyDirs.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/filefilters/OnlyDirs.java
+   - dir: bin
+     file: processing/app/helpers/filefilters/OnlyFilesWithExtension.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/filefilters/OnlyFilesWithExtension.java
+   - dir: bin
+     file: processing/app/debug/LegacyTargetPackage.class
+     sourceDir: src
+     sourceFile: processing/app/debug/LegacyTargetPackage.java
+   - dir: bin
+     file: cc/arduino/contributions/libraries/LibrariesIndex.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/libraries/LibrariesIndex.java
+   - dir: bin
+     file: cc/arduino/contributions/libraries/ContributedLibrary.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/libraries/ContributedLibrary.java
+   - dir: bin
+     file: processing/app/debug/TargetBoard.class
+     sourceDir: src
+     sourceFile: processing/app/debug/TargetBoard.java
+   - dir: bin
+     file: processing/app/Platform.class
+     sourceDir: src
+     sourceFile: processing/app/Platform.java
+   - dir: bin
+     file: cc/arduino/files/DeleteFilesOnShutdown.class
+     sourceDir: src
+     sourceFile: cc/arduino/files/DeleteFilesOnShutdown.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/ContributedTargetPackage.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/ContributedTargetPackage.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/ContributionsIndexer.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/ContributionsIndexer.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/HostDependentDownloadableContribution.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/HostDependentDownloadableContribution.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/ContributedTool.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/ContributedTool.java
+   - dir: bin
+     file: processing/app/debug/TargetPlatform.class
+     sourceDir: src
+     sourceFile: processing/app/debug/TargetPlatform.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/EmptyContributionIndex.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/EmptyContributionIndex.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/ContributedTargetPlatform.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/ContributedTargetPlatform.java
+   - dir: bin
+     file: cc/arduino/contributions/packages/ContributedToolReference.class
+     sourceDir: src
+     sourceFile: cc/arduino/contributions/packages/ContributedToolReference.java
+   - dir: bin
+     file: processing/app/debug/TargetPackage.class
+     sourceDir: src
+     sourceFile: processing/app/debug/TargetPackage.java
+ - target:
+   - dir: bin
+     file: processing/app/legacy/PApplet.class
+     sourceDir: src
+     sourceFile: processing/app/legacy/PApplet.java
+ - target:
+   - dir: bin
+     file: processing/app/helpers/FileUtils.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/FileUtils.java
+   - dir: bin
+     file: processing/app/helpers/FileUtils$SplitFile.class
+     sourceDir: src
+     sourceFile: processing/app/helpers/FileUtils.java
+ - target:
+   - dir: bin
+     file: cc/arduino/i18n/Languages.class
+     sourceDir: src
+     sourceFile: cc/arduino/i18n/Languages.java
+   - dir: bin
+     file: processing/app/I18n.class
+     sourceDir: src
+     sourceFile: processing/app/I18n.java
+   - dir: bin
+     file: cc/arduino/i18n/Language.class
+     sourceDir: src
+     sourceFile: cc/arduino/i18n/Language.java
